@@ -155,16 +155,44 @@ function initScrollReveal() {
 function initContactForm() {
     const form = document.getElementById('contactForm');
     if (!form) return;
-    form.addEventListener('submit', e => {
+    form.addEventListener('submit', async (e) => {
         e.preventDefault();
         const btn = form.querySelector('button[type="submit"]');
         const orig = btn.innerHTML;
-        btn.innerHTML = '<span>Message Sent! ✨</span>';
-        btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
+        
+        // Show loading state
+        btn.innerHTML = '<span>Sending... ⏳</span>';
+
+        // Get form data
+        const formData = new FormData(form);
+
+        try {
+            // Send email via Formsubmit
+            const response = await fetch("https://formsubmit.co/ajax/jobinsajeevan007@gmail.com", {
+                method: "POST",
+                body: formData
+            });
+
+            if (response.ok) {
+                // Success
+                btn.innerHTML = '<span>Message Sent! ✨</span>';
+                btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
+                form.reset();
+            } else {
+                // Error from server
+                btn.innerHTML = '<span>Error! Try again ❌</span>';
+                btn.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
+            }
+        } catch (error) {
+            // Network error
+            btn.innerHTML = '<span>Connection Error 🔌</span>';
+            btn.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
+        }
+
+        // Reset button after 3 seconds
         setTimeout(() => {
             btn.innerHTML = orig;
             btn.style.background = '';
-            form.reset();
         }, 3000);
     });
 }
