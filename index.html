@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobin S — Data Analyst Portfolio</title>
+    <meta name="description" content="Portfolio of Jobin S — Data Analyst & Creative Developer. Explore my projects, skills, and experience.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>J<span class="logo-dot">.</span>S<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="home">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-greeting">Hello, I'm</span>
+                <span class="hero-name">Jobin S</span>
+                <span class="hero-subtitle">Data Analyst</span>
+            </h1>
+            <div class="hero-role">
+                <span class="role-dynamic" id="typingText"></span>
+                <span class="typing-cursor">|</span>
+            </div>
+            <p class="hero-description">
+                I transform raw data into compelling stories and build digital experiences 
+                that make an impact. Passionate about analytics, visualization, and creative solutions.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span>Get In Touch</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-icon">🎓</span>
+                    <span class="stat-label">Fresher</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">01. About</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">
+                            <span>👨‍💻</span>
+                        </div>
+                        <div class="image-glow"></div>
+                    </div>
+                    <div class="about-badge">
+                        <span class="badge-icon">🎓</span>
+                        <span class="badge-label">Fresher</span>
+                    </div>
+                </div>
+                <div class="about-content reveal">
+                    <h3 class="about-heading">A passionate <span class="gradient-text">Data Analyst</span> based in India</h3>
+                    <p class="about-text">
+                        I specialize in turning complex datasets into actionable insights that drive 
+                        business decisions. With expertise in Python, SQL, Excel, and Business Intelligence 
+                        tools, I create comprehensive dashboards and analytical reports that tell compelling data stories.
+                    </p>
+                    <p class="about-text">
+                        When I'm not crunching numbers, you'll find me exploring new technologies, 
+                        building creative projects, and continuously learning to stay ahead in the 
+                        ever-evolving world of data science.
+                    </p>
+                    <div class="about-tags">
+                        <div class="about-tag">
+                            <span class="tag-icon">📍</span>
+                            <span>Based in India</span>
+                        </div>
+                        <div class="about-tag">
+                            <span class="tag-icon">🎯</span>
+                            <span>Open to work</span>
+                        </div>
+                        <div class="about-tag">
+                            <span class="tag-icon">📧</span>
+                            <span>jobinsajeevan007@gmail.com</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary" style="margin-top:1.5rem;">
+                        <span>Let's Connect</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">02. Skills</span>
+                <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="skill-icon-wrapper"><span class="skill-icon">🐍</span></div>
+                    <h3 class="skill-name">Python</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Web Scraping</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                    <span class="skill-level">Advanced</span>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon-wrapper"><span class="skill-icon">📊</span></div>
+                    <h3 class="skill-name">Excel & VBA</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Power Query</span>
+                        <span class="skill-tag">VLOOKUP</span>
+                        <span class="skill-tag">XLOOKUP</span>
+                        <span class="skill-tag">Macros</span>
+                        <span class="skill-tag">Pivot Tables</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                    <span class="skill-level">Expert</span>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon-wrapper"><span class="skill-icon">🗄️</span></div>
+                    <h3 class="skill-name">SQL</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Joins</span>
+                        <span class="skill-tag">Subqueries</span>
+                        <span class="skill-tag">CTEs</span>
+                        <span class="skill-tag">Window Functions</span>
+                        <span class="skill-tag">Stored Procedures</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                    <span class="skill-level">Advanced</span>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon-wrapper"><span class="skill-icon">📈</span></div>
+                    <h3 class="skill-name">Power BI</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">DAX</span>
+                        <span class="skill-tag">Data Modeling</span>
+                        <span class="skill-tag">Power Query</span>
+                        <span class="skill-tag">Reports</span>
+                        <span class="skill-tag">Dashboards</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                    <span class="skill-level">Advanced</span>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon-wrapper"><span class="skill-icon">📉</span></div>
+                    <h3 class="skill-name">Tableau</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Calculated Fields</span>
+                        <span class="skill-tag">LOD Expressions</span>
+                        <span class="skill-tag">Dashboards</span>
+                        <span class="skill-tag">Stories</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                    <span class="skill-level">Intermediate</span>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon-wrapper"><span class="skill-icon">🌐</span></div>
+                    <h3 class="skill-name">HTML / CSS / JS</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">Flexbox</span>
+                        <span class="skill-tag">Grid</span>
+                        <span class="skill-tag">DOM</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                    <span class="skill-level">Intermediate</span>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon-wrapper"><span class="skill-icon">🤖</span></div>
+                    <h3 class="skill-name">Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Regression</span>
+                        <span class="skill-tag">Classification</span>
+                        <span class="skill-tag">EDA</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+                    <span class="skill-level">Intermediate</span>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon-wrapper"><span class="skill-icon">📐</span></div>
+                    <h3 class="skill-name">Data Modeling</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Star Schema</span>
+                        <span class="skill-tag">Snowflake</span>
+                        <span class="skill-tag">ERD</span>
+                        <span class="skill-tag">Normalization</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                    <span class="skill-level">Advanced</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">03. Projects</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">Some of the things I've built</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Featured project -->
+                <div class="project-card project-featured reveal">
+                    <div class="project-image">
+                        <div class="project-placeholder"><span>📊</span></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-btn" title="View Project">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Excel</span>
+                            <span class="tag">Advanced Excel</span>
+                            <span class="tag">Power Query</span>
+                            <span class="tag">Power Pivot</span>
+                            <span class="tag">Data Modeling</span>
+                            <span class="tag">Pivot Tables</span>
+                            <span class="tag">Pivot Charts</span>
+                            <span class="tag">Slicers</span>
+                            <span class="tag">DAX</span>
+                            <span class="tag">KPI Cards</span>
+                            <span class="tag">Conditional Formatting</span>
+                        </div>
+                        <h3 class="project-title">Sales Analytics Dashboard</h3>
+                        <p class="project-desc">End-to-end interactive Excel dashboard that transforms raw sales data into actionable business insights. Built with Power Query for ETL, Power Pivot for data modeling & DAX measures, dynamic pivot tables & charts, KPI scorecards tracking revenue, profit margins, and growth trends, plus slicers for region/category/date filtering — all in a clean, professional layout.</p>
+                    </div>
+                </div>
+                <!-- Regular projects -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-placeholder"><span>🤖</span></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-btn" title="View Project">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                        <h3 class="project-title">Automation Bot</h3>
+                        <p class="project-desc">Python-based automation bot for streamlining workflows and repetitive tasks with web integration.</p>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-placeholder"><span>📈</span></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-btn" title="View Project">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Power BI</span>
+                            <span class="tag">DAX</span>
+                        </div>
+                        <h3 class="project-title">Data Visualization Suite</h3>
+                        <p class="project-desc">Interactive Power BI dashboards with advanced DAX measures for business intelligence reporting.</p>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-placeholder"><span>🔍</span></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-btn" title="View Project">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Matplotlib</span>
+                        </div>
+                        <h3 class="project-title">Exploratory Data Analysis</h3>
+                        <p class="project-desc">In-depth EDA of large datasets using Python, uncovering patterns through statistical analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">04. Contact</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <p class="section-subtitle">Let's discuss your next project</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3 class="contact-heading">Let's talk about<br><span class="gradient-text">everything!</span></h3>
+                    <p class="contact-text">Don't like forms? Send me an email directly or connect on social media. I'll get back to you as soon as possible!</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:jobinsajeevan007@gmail.com" class="contact-value">jobinsajeevan007@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="formName" name="name" placeholder=" " required>
+                        <label for="formName">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="formEmail" name="email" placeholder=" " required>
+                        <label for="formEmail">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="formSubject" name="subject" placeholder=" " required>
+                        <label for="formSubject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="formMessage" name="message" rows="4" placeholder=" " required></textarea>
+                        <label for="formMessage">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <span>Send Message</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <a href="#home" class="nav-logo">
+                    <span class="logo-bracket">&lt;</span>J<span class="logo-dot">.</span>S<span class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-copy">© 2026 Jobin S. Crafted with 💜</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
